@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HomePlate IN — Prototype</title>
+<meta name="description" content="Rough-draft clickable prototype: a local marketplace for Indiana home-made food. Demo data only.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥧</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="proto-bar">ROUGH-DRAFT PROTOTYPE · demo data only · no real payments · “HomePlate IN” is a placeholder name</div>
+<header class="topbar">
+  <a class="brand" href="#/browse" aria-label="HomePlate IN home"><span class="logo">🥧</span><span>HomePlate <b>IN</b></span><small class="ph">placeholder name</small></a>
+  <div class="role-switch" role="tablist" aria-label="Role">
+    <button id="role-buy" data-role="buy" role="tab">I'm buying</button>
+    <button id="role-sell" data-role="sell" role="tab">I'm selling</button>
+  </div>
+  <nav class="top-actions">
+    <a href="#/admin" class="btn ghost sm" id="nav-admin" title="Mock admin review">🛡️ <span class="hide-sm">Admin (demo)</span></a>
+    <a href="#/cart" class="btn ghost sm cart-link" id="nav-cart">🛒 <span id="cart-count" class="badge">0</span></a>
+  </nav>
+</header>
+<main id="app" tabindex="-1"></main>
+<footer class="footer">
+  <p><b>Prototype disclaimer:</b> This is a rough-draft clickable prototype built for internal review by Vizie Designs (Fort Wayne, IN). All sellers, listings, orders and documents are fictional demo data stored only in your browser (localStorage). No real payments are processed. Compliance content is a simplified summary for design purposes and <b>is not legal advice</b>; rules can change — sellers should confirm requirements with the Indiana Department of Health and their local health department.</p>
+  <p class="footer-row"><button class="btn ghost sm" id="reset-demo">↺ Reset demo data</button> <a href="#/compliance">Indiana rules &amp; links</a> · <a href="#/admin">Mock admin</a> · <span>Prototype v0.1 · 2026</span></p>
+</footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="hbv-matrix.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
